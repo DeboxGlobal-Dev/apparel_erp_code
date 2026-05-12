@@ -1,0 +1,33 @@
+127.0.0.1	19-03-2025 10:08:21 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	19-03-2025 10:08:21 AM	JSON POST : {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:21 AM	INSIDE BUYER SUPPLIER LIST API: {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	19-03-2025 10:08:22 AM	JSON POST : {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	INSIDE BUYER SUPPLIER LIST API: {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	19-03-2025 10:08:22 AM	JSON POST : {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	INSIDE BUYER SUPPLIER LIST API: {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	19-03-2025 10:08:22 AM	JSON POST : {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	19-03-2025 10:08:22 AM	INSIDE BUYER SUPPLIER LIST API: {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}

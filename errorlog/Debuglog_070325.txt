@@ -1,0 +1,141 @@
+127.0.0.1	07-03-2025 09:07:06 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 09:07:06 AM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 09:07:07 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 09:07:07 AM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:07:07 AM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:09:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 09:09:18 AM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 09:09:18 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 09:09:18 AM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:09:18 AM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:12:17 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/listVoucherEntryAPI.php127.0.0.1	07-03-2025 09:12:17 AM	JSON POST : {
+        "VoucherNo":"",
+        "TransactionDate":"2025-03-06",
+        "Type":"JV"
+  }127.0.0.1	07-03-2025 09:12:17 AM	Response return from listVoucherEntryAPI: {
+    "status": 0,
+    "VoucherData": [
+        {
+            "Number": 1,
+            "Id": "3",
+            "VoucherNo": "JV-060325-39",
+            "TransactionDate": "2025-03-06",
+            "DateAdded": "2025-03-06 10:38:25",
+            "Type": "JV",
+            "AddedBy": "1",
+            "ListOfArray": [
+                {
+                    "Debit": "100",
+                    "Credit": "0",
+                    "Narration": "this is for test",
+                    "AccountName": "CP001"
+                },
+                {
+                    "Debit": "0",
+                    "Credit": "100",
+                    "Narration": "testttt",
+                    "AccountName": "BY0003"
+                }
+            ]
+        }
+    ]
+}127.0.0.1	07-03-2025 09:41:06 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 09:41:06 AM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 09:41:07 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 09:41:07 AM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:41:07 AM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:55:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 09:55:19 AM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 09:55:20 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 09:55:20 AM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:55:20 AM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 09:55:22 AM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/listVoucherEntryAPI.php127.0.0.1	07-03-2025 09:55:22 AM	JSON POST : {
+        "VoucherNo":"",
+        "TransactionDate":"2025-03-06",
+        "Type":"JV"
+  }127.0.0.1	07-03-2025 09:55:22 AM	Response return from listVoucherEntryAPI: {
+    "status": 0,
+    "VoucherData": [
+        {
+            "Number": 1,
+            "Id": "3",
+            "VoucherNo": "JV-060325-39",
+            "TransactionDate": "2025-03-06",
+            "DateAdded": "2025-03-06 10:38:25",
+            "Type": "JV",
+            "AddedBy": "1",
+            "ListOfArray": [
+                {
+                    "Debit": "100",
+                    "Credit": "0",
+                    "Narration": "this is for test",
+                    "AccountName": "CP001"
+                },
+                {
+                    "Debit": "0",
+                    "Credit": "100",
+                    "Narration": "testttt",
+                    "AccountName": "BY0003"
+                }
+            ]
+        }
+    ]
+}127.0.0.1	07-03-2025 12:37:54 PM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 12:37:54 PM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 12:37:54 PM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 12:37:54 PM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 12:37:55 PM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 03:07:36 PM	POST API URL HIT: 127.0.0.1/web/account_api/vouchers/ledgerAPI.php127.0.0.1	07-03-2025 03:07:36 PM	JSON POST : {
+  "Type":"",
+  "Branch":"CP001",
+  "fromDate":"2025-03-01",
+  "toDate":"2025-03-06"
+}127.0.0.1	07-03-2025 03:07:38 PM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	07-03-2025 03:07:38 PM	JSON POST : {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }127.0.0.1	07-03-2025 03:07:38 PM	INSIDE BUYER SUPPLIER LIST API: {
+                                "tableName":"all",
+                                "code":"",
+                                "Status":"1"
+                                }

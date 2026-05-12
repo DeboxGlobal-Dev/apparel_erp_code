@@ -1,0 +1,357 @@
+127.0.0.1	12-03-2025 08:43:51 AM	POST API URL HIT: http://127.0.0.1/web/staging/buyersupplierlist_api.php127.0.0.1	12-03-2025 08:43:51 AM	JSON POST : {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	12-03-2025 08:43:51 AM	INSIDE BUYER SUPPLIER LIST API: {
+  "tableName":"all",
+  "code":"",
+  "Status":"1"
+}127.0.0.1	12-03-2025 08:44:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 08:44:09 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 08:44:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 08:44:10 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 08:44:23 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 08:44:23 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 08:44:45 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 08:44:45 AM	JSON POST : {
+		"name" : "Current Asset",
+		 "accountGroup": "1"
+}127.0.0.1	12-03-2025 08:44:46 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 08:44:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 08:44:48 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 08:44:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 08:44:48 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:14:30 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:14:30 AM	JSON POST : {
+		"name" : "Current Liabilities",
+		 "accountGroup": "2"
+}127.0.0.1	12-03-2025 09:14:30 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:14:31 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:14:31 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:14:32 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:14:32 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:14:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:14:48 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:14:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:14:48 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:14:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:14:48 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:14:59 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:14:59 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:14:59 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:14:59 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:15:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:15:03 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:15:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:03 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:15:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:03 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:15:47 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:47 AM	JSON POST : {
+
+		"name" : "Sundry Creditors",
+		"ledgerId" : "LB0001",
+		 "accountGroup": "4"
+
+}127.0.0.1	12-03-2025 09:15:48 AM	 Saving addAccountSubGroupAPI.. {"Status":1,"Message":"Data Added Successfully!"}127.0.0.1	12-03-2025 09:15:50 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:15:50 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:15:50 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:50 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:15:51 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:15:51 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:15:52 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:52 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:15:52 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:15:52 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:16:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:16:03 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:16:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:16:03 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:16:27 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountSubGroupAPI.php127.0.0.1	12-03-2025 09:16:27 AM	JSON POST : {
+
+		"name" : "Sundry Debtors",
+		"ledgerId" : "LB0002",
+		 "accountGroup": "3"
+
+}127.0.0.1	12-03-2025 09:16:27 AM	 Saving addAccountSubGroupAPI.. {"Status":1,"Message":"Data Added Successfully!"}127.0.0.1	12-03-2025 09:16:28 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:16:28 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:16:29 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:16:29 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:16:58 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:16:58 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:16:58 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:16:58 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:16:59 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:16:59 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:16:59 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:16:59 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:17:07 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:17:07 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:17:07 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:17:07 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:17:07 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:17:07 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:17:13 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:17:13 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:17:13 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:17:13 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:17:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:17:18 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:17:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:17:19 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:17:21 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:17:21 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:17:21 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:17:21 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:19:06 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:19:06 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:19:06 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:19:06 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:19:32 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:19:32 AM	JSON POST : {
+		"name" : "Bank Accounts",
+		 "accountGroup": "1"
+}127.0.0.1	12-03-2025 09:19:33 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:19:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:19:33 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:19:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:19:33 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:19:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:19:33 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:20:54 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:20:54 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:20:54 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:20:54 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:21:08 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:08 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:21:16 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:21:16 AM	JSON POST : {
+		"name" : "Dirent Income",
+		 "accountGroup": "4"
+}127.0.0.1	12-03-2025 09:21:16 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:21:17 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:17 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:21:17 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:17 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:21:17 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:17 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:21:23 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:23 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:21:23 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:23 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:21:25 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:25 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:21:25 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:25 AM	JSON POST : {
+		"accountGroup":"6"
+		}127.0.0.1	12-03-2025 09:21:34 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:21:34 AM	JSON POST : {
+		"name" : "Indirect Income",
+		 "accountGroup": "4"
+}127.0.0.1	12-03-2025 09:21:34 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:21:35 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:35 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:21:35 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:35 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:21:35 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:35 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:21:37 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:37 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:21:37 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:37 AM	JSON POST : {
+		"accountGroup":"6"
+		}127.0.0.1	12-03-2025 09:21:37 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:37 AM	JSON POST : {
+		"accountGroup":"7"
+		}127.0.0.1	12-03-2025 09:21:39 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:39 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:21:51 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:21:51 AM	JSON POST : {
+		"name" : "Direct Expense",
+		 "accountGroup": "5"
+}127.0.0.1	12-03-2025 09:21:51 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:21:51 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:51 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:21:52 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:52 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:21:52 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:52 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:21:53 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:21:53 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:21:53 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:21:53 AM	JSON POST : {
+		"accountGroup":"8"
+		}127.0.0.1	12-03-2025 09:22:08 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/addAccountGroupAPI.php127.0.0.1	12-03-2025 09:22:08 AM	JSON POST : {
+		"name" : "Indirect Expense",
+		 "accountGroup": "5"
+}127.0.0.1	12-03-2025 09:22:08 AM	 Saving addAccountGroupAPI.. {
+    "status": 1,
+    "message": "Insert Data Successfully"
+}127.0.0.1	12-03-2025 09:22:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:09 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:22:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:09 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:22:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:09 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:22:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:10 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:22:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:10 AM	JSON POST : {
+		"accountGroup":"8"
+		}127.0.0.1	12-03-2025 09:22:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:10 AM	JSON POST : {
+		"accountGroup":"9"
+		}127.0.0.1	12-03-2025 09:22:12 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:12 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:22:12 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:12 AM	JSON POST : {
+		"accountGroup":"6"
+		}127.0.0.1	12-03-2025 09:22:12 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:12 AM	JSON POST : {
+		"accountGroup":"7"
+		}127.0.0.1	12-03-2025 09:22:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:14 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:22:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:14 AM	JSON POST : {
+		"accountGroup":"8"
+		}127.0.0.1	12-03-2025 09:22:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:14 AM	JSON POST : {
+		"accountGroup":"9"
+		}127.0.0.1	12-03-2025 09:22:16 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:16 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:22:16 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:16 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:22:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:18 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:22:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:18 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:22:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:19 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:22:20 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:20 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:22:20 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:20 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:22:20 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:20 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:22:27 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:27 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:22:27 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:27 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:22:27 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:27 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:22:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:33 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:22:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:33 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:22:33 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:33 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:22:47 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:22:47 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:22:48 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:22:48 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:58:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:58:18 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:58:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:58:18 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:58:18 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:58:18 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 09:59:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:59:09 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 09:59:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:09 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 09:59:09 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:09 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 09:59:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:59:10 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 09:59:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:10 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 09:59:11 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:59:11 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 09:59:11 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:11 AM	JSON POST : {
+		"accountGroup":"6"
+		}127.0.0.1	12-03-2025 09:59:11 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:11 AM	JSON POST : {
+		"accountGroup":"7"
+		}127.0.0.1	12-03-2025 09:59:13 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:59:13 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 09:59:13 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:13 AM	JSON POST : {
+		"accountGroup":"8"
+		}127.0.0.1	12-03-2025 09:59:13 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:13 AM	JSON POST : {
+		"accountGroup":"9"
+		}127.0.0.1	12-03-2025 09:59:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 09:59:14 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 09:59:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:14 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 09:59:14 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 09:59:14 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 10:00:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:19 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 10:00:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:19 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 10:00:19 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:19 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 10:00:21 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:21 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 10:00:21 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:21 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 10:00:21 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:21 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 10:00:22 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:22 AM	JSON POST : {
+			"accountGroup":"5"
+	}127.0.0.1	12-03-2025 10:00:22 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:22 AM	JSON POST : {
+		"accountGroup":"8"
+		}127.0.0.1	12-03-2025 10:00:23 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:23 AM	JSON POST : {
+		"accountGroup":"9"
+		}127.0.0.1	12-03-2025 10:00:23 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:23 AM	JSON POST : {
+			"accountGroup":"4"
+	}127.0.0.1	12-03-2025 10:00:24 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:24 AM	JSON POST : {
+		"accountGroup":"6"
+		}127.0.0.1	12-03-2025 10:00:24 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:24 AM	JSON POST : {
+		"accountGroup":"7"
+		}127.0.0.1	12-03-2025 10:00:24 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:26 AM	JSON POST : {
+			"accountGroup":"3"
+	}127.0.0.1	12-03-2025 10:00:26 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:26 AM	JSON POST : {
+		"accountGroup":"2"
+		}127.0.0.1	12-03-2025 10:00:26 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:26 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 10:00:26 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:26 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 10:00:26 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:26 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 10:00:50 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:00:50 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 10:00:51 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:51 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 10:00:51 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:00:51 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 10:01:02 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:01:02 AM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 10:01:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:01:03 AM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 10:01:03 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:01:03 AM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 10:01:10 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 10:01:10 AM	JSON POST : {
+			"accountGroup":"2"
+	}127.0.0.1	12-03-2025 10:01:11 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:01:11 AM	JSON POST : {
+		"accountGroup":"1"
+		}127.0.0.1	12-03-2025 10:01:11 AM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 10:01:11 AM	JSON POST : {
+		"accountGroup":"4"
+		}127.0.0.1	12-03-2025 12:13:24 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 12:13:24 PM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 12:13:25 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 12:13:25 PM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 12:13:25 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 12:13:25 PM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 01:38:44 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 01:38:44 PM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 01:38:45 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 01:38:45 PM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 01:38:45 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 01:38:45 PM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 01:38:49 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 01:38:50 PM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 01:38:50 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 01:38:50 PM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 01:38:50 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 01:38:50 PM	JSON POST : {
+		"accountGroup":"5"
+		}127.0.0.1	12-03-2025 03:03:18 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountGroupAPI.php127.0.0.1	12-03-2025 03:03:18 PM	JSON POST : {
+			"accountGroup":"1"
+	}127.0.0.1	12-03-2025 03:03:18 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 03:03:18 PM	JSON POST : {
+		"accountGroup":"3"
+		}127.0.0.1	12-03-2025 03:03:19 PM	POST API URL HIT: 127.0.0.1/web/account_api/masters/accountSubGroupAPI.php127.0.0.1	12-03-2025 03:03:19 PM	JSON POST : {
+		"accountGroup":"5"
+		}

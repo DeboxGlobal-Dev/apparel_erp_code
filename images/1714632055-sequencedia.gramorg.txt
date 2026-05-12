@@ -1,0 +1,27 @@
+title File Validation
+actor rateuser
+rateuser->frontEnd: Choose Template
+rateuser->frontEnd:upload excel
+activate frontEnd
+frontEnd-->frontEnd: Scan headerName and position
+frontEnd->rateuser: Error / Page is ok to upload
+deactivate frontEnd
+
+rateuser->frontEnd: Upload File (if ok)
+activate frontEnd
+frontEnd->backend: Upload 
+activate backend
+backend-->backend: Validate Field Type \n Mendatory or Option & Field data type with values
+backend->frontEnd: Date is ok to procedd or has some error
+deactivate backend
+frontEnd->rateuser: Show the Errors if any \n Message like processing initiated
+
+deactivate frontEnd
+
+frontEnd->backend: Query for Status
+backend->frontEnd: Status value
+
+
+http://api.tektravels.com/FlightAPIDocument/
+
+https://api.tektravels.com/HotelAPIDocument/

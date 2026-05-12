@@ -1,0 +1,314 @@
+                
+                <table class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr class="redrow" role="row">
+                
+                <th><div align="center">Buyer</div></th>
+                <th><div align="center">Season</div></th>
+                <th><div align="center">Category</div></th>
+                <!--<th><div align="center">Sub&nbsp;Category</div></th>-->
+                <th><div align="center">Style&nbsp;RefId</div></th>
+                <th><div align="center">Refrence&nbsp;By</div></th>
+                <th><div align="center">Priority</div></th>
+                <th><div align="center">Received&nbsp;Date</div></th>
+                <th><div align="center">Remark</div></th>
+                <th><div align="center">StyleType</div></th>
+                
+                
+                
+                
+                
+                </thead>
+                <tbody id="allhotellisting">
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr role="row" class="odd">
+                
+                                
+                <td >Rohit Durgapal<br>Rohit Durgapal<br>Rohit Durgapal3<br>Saurabh test buyer<br>Woodland Aero Space<br>                </td>
+                <td >
+                All<br>Summer<br>Winter<br>                </td>
+                                <td>                <div style="    text-align: center;font-weight: 700;color:red;">
+                Accessories<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>COMBO<br>GLOVES<br>Hammock<br>HIP FLASK<br>Key Rings<br>MUFFLER<br>Shoe Horn<br>Travel kit<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Bagpacks<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Bags<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>Antithieft<br>Compact Bags<br>Duffle Bag<br>Hammock<br>HIKING BAGS<br>LADIES FABRIC BACKPACKS<br>LADIES LEATHER BACKPACK<br>MEN'S LEATHER BACKPACK<br>OFFICE BAGS<br>RuckSuck<br>SCHOOL BACKPACKS<br>SLING BAG<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Belts<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>BELTS - LEATHER<br>CANVAS BELT<br>LADIES BELT<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Caps<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>HAT<br>PEAK VISOR CAPS (Retail)<br>PEAK VISOR CAPS (WholeSale)<br>Summer Cap<br>SUN CAPS<br>WOOLLEN CAPS<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Garments<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>Blazer (F)<br>Blazer (M)<br>CARGO SHORTS(F)<br>CARGO SHORTS(M)<br>CORDUROY JACKET (F)<br>CORDUROY JACKET (M)<br>CULLOTES<br>DENIM JACKET<br>DENIM SHORTS (F)<br>DENIM SHORTS (M)<br>FORMAL TROUSER (F)<br>FORMAL TROUSER (M)<br>FULL SLEEVE CARGO SHIRT(F)<br>FULL SLEEVE CARGO SHIRT(M)<br>Full Sleeve shirt<br>GLOVES<br>HALF SLEEVE CARGO SHIRT(F)<br>HALF SLEEVE CARGO SHIRT(M)<br>Jacket full sleeve<br>JACKET FULL SLEEVE (F)<br>JACKET FULL SLEEVE (M)<br>JACKET SLEEV- LESS (M)<br>JACKET SLEEVE LESS (F)<br>JOGGER PANT CARGO(F)<br>JOGGER PANT CARGO(M)<br>JOGGER PANTS BASIC (F)<br>JOGGER PANTS BASIC (M)<br>LADIES BOTTOM<br>LADIES CAPRI<br>LADIES CULLOTES<br>LADIES DRESS<br>LADIES DUNGREE<br>LADIES PRE-WINTER<br>LADIES PULLOVER<br>LADIES TOP<br>Mens Full Sleeve Jacket<br>MENS LEATHER WALLET<br>MENS PRE-WINTER<br>MENS PULLOVER<br>MEN'S DENIM<br>MUFFLER<br>Packing<br>PENT (F)<br>PENT (M)<br>POLO T-SHIRT BASIC (F)<br>POLO T-SHIRT BASIC (M)<br>POLO T-SHIRT STYLISH (F)<br>POLO T-SHIRT STYLISH (M)<br>R/N T-SHIRT (F)<br>R/N T-SHIRT (M)<br>SHIRTS FULL SLEEVE BASIC (M)<br>SHIRTS FULL SLEEVE BASIC(F)<br>SHIRTS HALF SLEEVE BASIC(F)<br>SHIRTS HALF SLEEVE BASIC(M)<br>SHORTS BASIC (F)<br>SHORTS BASIC(M)<br>SKIRT<br>Sweater (F)<br>Sweater (M)<br>TROUSER CARGO (F)<br>TROUSER CARGO (M)<br>TROUSER CHINOS (F)<br>TROUSER CHINOS (M)<br>V/N T-SHIRT (F)<br>V/N T-SHIRT (M)<br>WINDCHEATER<br>WOMEN'S DENIM<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Handbags<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Leather Garments<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>LEATHER JACKET<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Shoes<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Socks<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>SOCK<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Under Garments<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                <div style="    text-align: center;font-weight: 700;color:red;">
+                Wallets<br>                </div>
+            
+                  <table style="width: -webkit-fill-available;border-bottom: dotted;" class="table table-bordered table-hover no-footer table-responsive">
+                <thead style="background-color: #f5f5f5; text-align:center;">
+                <tr role="row">
+                
+                <th><div align="center">Sub Category</div></th>
+              
+                </thead>
+                <tbody id="allhotellisting">
+               
+                <tr role="row" class="odd">
+                            <td>CARD HOLDER<br>CLUTCHES<br>leather Wallets<br>MEN'S FABRIC WAIST POUCH<br>WALLETS - FABRIC<br></td>
+                                    </tr>
+                    </tbody>
+                    </table>
+                
+                
+                                
+                </td>
+                <!--<td>-->
+                                 
+                
+                
+                <!--</td>-->
+                
+                
+                <td>Manual Input</td>
+                
+                
+                
+                <td>
+                
+                Rajiv<br>                
+                
+                </td>
+                
+                
+                <td>Low<br>Medium<br>High </td>
+                
+                
+                
+                <td>date Format-24-07-2025</td>
+                
+                
+                <td>Manual Input</td>
+                
+                <td>Inhouse<br>Outsource</td>
+                
+                
+                
+                
+                </tr>
+                                
+                
+                </tbody>
+            </table>
+<style>
+    
+    
+    tbody tr td {
+        border:1px solid black;
+    }
+    
+    .redrow th {
+        color:red;
+    }
+</style>

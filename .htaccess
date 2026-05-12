@@ -1,0 +1,26 @@
+Options +FollowSymLinks
+RewriteEngine on
+ErrorDocument 403 ../
+ErrorDocument 404 ../
+
+RewriteCond %{HTTP_HOST} ^tsf-erp.com/staging/$ [NC]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) http://www.tsf-erp.com/staging/$1 [R=301,L]
+
+RewriteCond     %{SERVER_PORT} ^80$
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1$  [NC]  # Exclude localhost from HTTPS redirection
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+RewriteRule ^login.crm$ crm_login.php  [NC,L]
+RewriteRule ^forgot-password.crm$ forgotpassword.php  [NC,L]
+RewriteRule ^reset-password.crm$ resetpassword.php  [NC,L]
+RewriteRule ^logout.crm$ crm_logout.php  [NC,L]
+RewriteRule ^setup.crm$ crm_setup.php  [NC,L]
+RewriteRule ^setupsetting.crm$ crm_setup_setting.php  [NC,L]
+RewriteRule ^showpage.crm$ main_page.php  [NC,L]
+RewriteRule ^ac.crm$ allaction.php  [NC,L]
+RewriteRule ^hr_frm_action.crm$ hrfrmaction.php  [NC,L]
+RewriteRule ^expired.crm$ expired_page.php  [NC,L]
+RewriteRule ^downloadfile.crm$ dirfiles  [NC,L]
+RewriteRule ^docs.crm$ docs.php  [NC,L]
+RewriteRule ^doc/(.*)/(.*).html$ docs.php?d=$1&t=$2  [L]

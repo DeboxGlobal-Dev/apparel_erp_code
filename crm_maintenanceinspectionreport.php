@@ -1,0 +1,175 @@
+<?php
+ if($loginuserprofileId==1){
+
+$wheresearchassign=' 1 and ';
+
+} else {
+
+$wheresearchassign=' ( assignTo in (select id from '._USER_MASTER_.' where  empId in (select id from employeeMaster where id ='.$_SESSION['empid'].')) or assignTo in (select id from '._USER_MASTER_.' where  empId in (select reportingTo from employeeMaster where id="'.$_SESSION['empid'].'"))) ';
+
+$wheresearchassign=' '.$wheresearchassign.' and ';
+
+}?>
+<div class="page-content">
+<style>
+.even{
+background-color: #0097a71a;
+}
+</style>
+
+		<!-- Main sidebar -->
+		<?php include "left.php"; ?>
+		<div class="content-wrapper">
+
+		<!---Save Alert Notification---->
+		<?php include "savealert.php"; ?>
+
+
+
+			<div class="content pt-0" style="margin-top:20px;">
+
+				<div class="row">
+				<div class="col-xl-12">
+
+				<div class="card-header header-elements-inline bg-blue-700" style="padding: 10px;">
+						<div class="col-xl-9"><h5 class="card-title"><?php echo $pageName; ?></h5></div>
+						 <div class="col-xl-3" style="    padding-right: 0px;"><div class="btn-group justify-content-center" style="float:right;">
+
+ <?php if($addpermission==1){ ?>
+                <a href="showpage.crm?module=<?php echo $_GET['module']; ?>&add=yes" class="btn bg-teal-400 addnotify" aria-expanded="false" style="    background-color: #03d873b8;"  ><i class="fa fa-plus" aria-hidden="true"></i> Create New</a>
+                <?php } ?>
+
+						</div></div>
+					</div>
+
+				<div class="card">
+					<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"> <div class="datatable-scroll">
+					<table class="table table-bordered table-hover datatable-highlight dataTable no-footer" id="DataTables_Table_2" role="grid" aria-describedby="DataTables_Table_2_info">
+						<thead style="background-color: #f5f5f5;">
+							<tr role="row">
+								<!--<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 50px;">SR#</th>-->
+								<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">GRN Number</th>
+								<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">Supplier PO Number</th>
+								<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">Material</th>
+								<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1">Color </th>
+							    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1">Status</th>
+							    <!--<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" style="display:none;">&nbsp;</th>-->
+							</tr>
+						</thead>
+						<tbody>
+						<?php
+$no=1;
+$select='*';
+$where='';
+$rs='';
+$wheresearch='';
+$limit='20000';
+
+if($_GET['stylestatus']!=''){
+$stylestatus = 'and finalstatus="'.$_GET['stylestatus'].'"';
+}
+
+$where='where '.$wheresearchassign.' styleStatus!=0 and subject!="" '.$stylestatus.' and poAttachment!="" order by id desc';
+$page=$_GET['page'];
+
+$targetpage=$fullurl.'showpage.crm?module="'.$modfile['moduleName'].'"&records='.$limit.'&searchField='.$searchField.'&assignto='.$_GET['assignto'].'&';
+$rs=GetRecordList($select,_QUERY_MASTER_,$where,$limit,$page,$targetpage);
+$totalentry=$rs[1];
+$paging=$rs[2];
+while($resultlists=mysqli_fetch_array($rs[0])){
+
+$selectimg='*';
+$whereimg='parentId="'.$resultlists['id'].'" and galleryType="image_gallery" order by id asc';
+$rsimg=GetPageRecord($selectimg,'imageGallery',$whereimg);
+$imgresult=mysqli_fetch_array($rsimg);
+
+
+$selectdays='*';
+$wheredays='styleId="'.$resultlists['id'].'" and statusId in (19,20) order by id desc';
+$rsdays=GetPageRecord($selectdays,'styleAssignmentMaster',$wheredays);
+$resultdays=mysqli_fetch_array($rsdays);
+
+
+$rkdm=GetPageRecord('min(uploadInputDate) as minDate, max(uploadInputDate) as maxDate','linePlanMaster','1 and styleId="'.$resultlists['id'].'"');
+$dateWise=mysqli_fetch_array($rkdm);
+
+$startDate=	date('d-m-Y',strtotime($dateWise['minDate']));
+$endDate=date('d-m-Y',strtotime($dateWise['maxDate']));
+
+
+
+
+?>
+
+			<tr role="row" class="odd" <?php if($resultlists['stylestatus']=='0'){ ?> style="background-color: #ff704359;" <?php } ?>>
+
+
+
+					 <td>
+								-								</td>
+
+
+								 <td>
+								-								</td>
+
+
+							 <td>
+								-								</td>
+
+
+
+							   <td>
+								-								</td>
+
+							 <td>
+								-								</td>
+
+
+								<!--<td align="center" class="" style="display:none;">-->
+
+								<!-- <a class="btn btn-primary" style="padding:5px;" href="../21-01-2020/showpage.crm?module=stylewiselineplan&add=yes&styleid=<?php echo encode($resultlists['id']); ?>&startDate=<?php echo $startDate; ?>&endDate=<?php echo $endDate; ?>&factoryId=<?php echo $factotyData['id']; ?>"><i class="fa fa-eye " aria-hidden="true" style=" color: #fffffff1; font-size: 16px; "></i></a>-->
+								<!-- </td>-->
+
+								<?php if($resultdays['statusId']=='19' || $resultdays['statusId']=='20'){  ?>
+								<?php }else{ ?>
+								<?php } ?>
+							</tr>
+
+<?php } ?>
+						</tbody>
+					</table>
+					</div>
+					</div>
+
+					</div>
+
+				</div></div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+ <style>
+ .liststyleimg{float: left;
+    width: 70px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 2px solid #e6e6e6;}
+
+	.badge.dropdown-toggle:after { display:none;
+}
+
+
+ </style>
+
+ <script>
+$('#DataTables_Table_2').DataTable( {
+"order": [[ 0, "desc" ]]
+} );
+</script>
+

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&blnShowNewMenu=true -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>World Fashion Exchange</title>
+    <link href="./TNA_120_World Fashion Exchange_files/MenuStyle.css" rel="stylesheet" type="text/css">
+    <link href="./TNA_120_World Fashion Exchange_files/style.css" rel="stylesheet" type="text/css">
+    <link href="./TNA_120_World Fashion Exchange_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./TNA_120_World Fashion Exchange_files/core.css" rel="stylesheet" type="text/css"> 
+    <link href="./TNA_120_World Fashion Exchange_files/components.css" rel="stylesheet" type="text/css">
+    <link href="./TNA_120_World Fashion Exchange_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+<!--[if lt IE 9]><script src='JQuery/WFXjquery-1.8.3.js' type='text/javascript'></script>
+<![endif]--><!--[if IE 9]><!--><script src="./TNA_120_World Fashion Exchange_files/jquery-1.10.2.min.js.download" type="text/javascript"></script>
+<!--<![endif]--><script src="./TNA_120_World Fashion Exchange_files/jquery.blockUI.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXTranslateText.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/CommonFunctions.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/html5.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/jquery.ui.droppable.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXDroppable.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXSortable.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXDraggable.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXItem.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFX4.0Common.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/modernizr.min.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/WFXHome.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/bootstrap.min.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/deployJava.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/jquery.signalR-1.2.2.min.js.download" type="text/javascript"></script>
+<script src="./TNA_120_World Fashion Exchange_files/hubs" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+        localStorage.CloseChilds = 0, localStorage.DisableConcurrentLogins = 0;
+        
+        localStorage.DisableConcurrentLogins = "1";
+        $(function () {
+            var WFXHub = $.connection.wfxHub;
+            WFXHub.client.addMessage = function (message) {
+                var json = $.parseJSON(message);
+                var SessionID = json.SessionID, RemoteIP = json.RemoteIP, BrowserType = json.BrowserType;
+                if (SessionID != "txruzvqumgm4fp3det04vs4e" && (RemoteIP != "180.151.94.8" || (RemoteIP == "180.151.94.8" && BrowserType == "Chrome"))) {
+                    localStorage.CloseChilds = 1;
+                    setTimeout(function () {
+                        LogOff();
+                        //var msg = "Your credentials have been used to login to another system. This session has been terminated.";
+                        var msg = "Someone has logged in as this user from a different computer or browser window. Only one person may log in as a given user at a time. " +
+                            "As a consequence, this session has been terminated. To have multiple windows logged in as the same user, " +
+                            "use File >> New >> Window from your browsers menu bar.";
+                        alert(msg);
+                    }, 2000);
+                    //alert("Someone else logged in.");
+                } else {
+                    //alert("I logged in.");
+                }
+            }
+
+            $.connection.hub.start().done(function () {
+                /*Start<IssueID:118179>*/
+                WFXHub.server.joinRoom(("modelama-uspd").toLowerCase());
+                WFXHub.server.sendToGroup(("modelama-uspd").toLowerCase(), JSON.stringify({"SessionID":"txruzvqumgm4fp3det04vs4e","RemoteIP":"180.151.94.8","BrowserType":"Chrome"}));
+                /*End<IssueID:118179>*/
+
+            });
+
+        });
+        
+
+        function ToggleAssistantDisplay() {
+            var container = $("#medchat-container");
+            var visibility = container.attr("dStatus");
+            if (visibility == "on") {
+                container.attr("dStatus", "off");
+                container.hide();
+            }
+            else if (visibility == "off") {
+                container.attr("dStatus", "on");
+                container.show();
+            }
+        }
+
+    </script>
+    
+    <style>
+.medchat-widget #medchat-container {
+    position: fixed;
+   height: 380px;
+	    bottom: 92px;
+    width: 415px;
+    right: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.1), 0 2px 32px 0px rgba(0, 0, 0, 0.15);
+    z-index: 2147483000;
+    transform: scale(1);
+    transform-origin: 100% 100%;
+    transition: all 0.25s ease;
+    transition-property: top, height, width, bottom, right, border-radius, transform;
+    background-color: white;
+    margin-top: auto;
+}
+
+.medchat-widget #medchat-trigger {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #2276cc;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.1), 0 2px 32px 0px rgba(0, 0, 0, 0.15);
+    z-index: 2147483001;
+    opacity: 1;
+    transition: all 0.25s ease;
+    transition-property: opacity;
+    }
+
+#medchat-container{
+    height: 300px;
+}
+.medchat-widget .widget-header {
+    font-size: 16px;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-weight: 400;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.medchat-widget .widget-message {
+    font-size: 15px;
+    color: #223e5f;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    bottom: 60px;
+    top: 55px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    line-height: 1.33;
+}
+
+.medchat-widget .widget-input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+    color: #a9b5c5;
+    font-size: 14px;
+    cursor: pointer;
+}
+.mc-expand{ padding-top:3px;}
+</style>
+
+</head>
+
+
+
+<body id="MainBody" name="MainBody" style="margin: 0px; padding: 0px; overflow: auto;" onload="window_onLoad()">
+    <form action="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true">
+        <table width="100%" cellpadding="0px" cellspacing="0px">
+            <tbody><tr id="trMenu">
+                <td>
+                    <section class="wrapper">
+                        <header>
+                            <!-- top section start -->
+                            <div class="topsection">
+                                <!-- wfx logo start -->
+                                <div class="logo">
+                                    
+                                    <a title="Home" target="body" onclick="ShowParentMenuSelected();" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuStartupPage&amp;RedirURL=tri_BriefStartupPage.aspx">
+                                        <img src="./TNA_120_World Fashion Exchange_files/logo.png" height="24" width="81">
+                                    </a>
+                                    
+                                </div>
+                                <!-- wfx logo end -->
+                                <div id="notificationdiv">
+                                    <marquee behavior="scroll" direction="left" scrollamount="5" style="padding-top: 6px; margin-left: 5px; width: 569px;" id="notification"></marquee>
+                                    <marquee behavior="scroll" direction="left" scrollamount="5" style="padding-top: 6px; margin-left: 5px; display: none; width: 569px;" id="marqueeIncognitoNotification"></marquee>
+                                </div>
+                               
+                                <!-- Profile section start -->
+                                <div class="profile">
+                                    <ul id="MenuIcons">
+                                        <li id="UserFullName" title="US TEAM PD">US TEAM PD</li>
+                                        <li id="CompanyName">
+                                            MODELAMA EXPORTS (P) LIMITED&nbsp; (MODELAMA US)
+                                        </li>
+                                        <li id="ServerTime">19 Jun 2019  6:36:24 PM</li>
+                                        
+                                        
+                                            <li id="lihome"><a title="Home" target="body" class="home" onclick="ShowParentMenuSelected();" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuStartupPage&amp;RedirURL=tri_BriefStartupPage.aspx"></a></li>
+                                            <li id="liemail"><a title="Message Center" target="body" class="email" onclick="ShowParentMenuSelected();" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuMessageCenter&amp;RedirURL=wfx_MyWfx.aspx"></a></li>
+                                        
+                                         
+                                        <li>
+                                            <a href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#" class="profileicon"></a>
+                                            <!-- Profile box start -->
+                                            <div class="profilebox">
+                                                <span class="pointer">
+                                                    <img src="./TNA_120_World Fashion Exchange_files/profilebox-pointer.png">
+                                                </span>
+                                                <div class="profileboxleft">
+                                                    <img src="./TNA_120_World Fashion Exchange_files/profile-pic-default.jpg" height="65" width="65">
+                                                </div>
+                                                <div class="profileboxright">
+                                                    <ul id="UserProfile">
+                                                        <li>
+                                                            <a title="My Profile" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuProfile&amp;RedirURL=wfx_SettingsMain.aspx">My Profile </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#" onclick="LogOff();">Logout </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Profile box end -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Profile section end -->
+                            </div>
+                            <!-- navigation panel start -->
+                            <div class="bottomsection">
+                                <nav>
+                                    <ul id="ulMenu">
+                                    <li onmouseover="subMenuHeight(this);" menuname="mnuECatalog"><a title="Catalog" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#" class=""><span>Catalog</span></a><div class="submenu submenuLeft"><ul id="0003"><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuCatalaogSearch" id="0003_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCatalaogSearch&amp;RedirURL=WFX_ProductSearchMain.aspx">Search</a></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuTechpack" id="0003_0030" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Catalogs" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuTechpack&amp;RedirURL=WFX_CatalogMain.aspx%3FCatalogType=1">Catalogs</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuPriceLists"><a title="Price Lists" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Price Lists</span></a><div class="submenu1"><ul id="0003_0035"><li onmouseover="subMenuHeight(this);" menuname="mnuviewPriceList" id="0003_0035_0030" onclick="ShowParentMenuSelected(this);"><a undefined="" title="View" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuviewPriceList&amp;RedirURL=wfx_PriceListView.aspx">View</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuDefaultBuyingPrices" id="0003_0035_0040" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Default Buying Prices" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuDefaultBuyingPrices&amp;RedirURL=wfx_DefaultBuyingPrices.aspx">Default Buying Prices</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuStdSpec"><a title="Standard Specifications" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Standard Specifications</span></a><div class="submenu1"><ul id="0003_0050"><li onmouseover="subMenuHeight(this);" menuname="mnuColors" id="0003_0050_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Color Cards" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuColors&amp;RedirURL=WFX_ColorMain.htm">Color Cards</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSizes" id="0003_0050_0002" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Size_Width Ranges" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSizes&amp;RedirURL=WFX_SizeMain.htm">Size_Width Ranges</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSeason" id="0003_0050_0005" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Seasons" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSeason&amp;RedirURL=wfx_SeasonSettingsMain.aspx">Seasons</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuWashType" id="0003_0050_0017" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Wash Type" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuWashType&amp;RedirURL=wfx_WashType.aspx">Wash Type</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuTestingType" id="0003_0050_0018" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Testing" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuTestingType&amp;RedirURL=wfx_TestingMain.aspx">Testing</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuQuality" id="0003_0050_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Quality" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuQuality&amp;RedirURL=wfx_QualityList.aspx">Quality</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuEmbroidaryType" id="0003_0050_0032" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Embroidery Type" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuEmbroidaryType&amp;RedirURL=wfx_EmbroidaryType.aspx">Embroidery Type</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuCareInstruction" id="0003_0050_0035" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Care Instruction" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCareInstruction&amp;RedirURL=../WFXBase4.0/wfx_CareInstructionWordingTemplateMain.aspx">Care Instruction</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuCareSymbols" id="0003_0050_0035" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Care Symbols" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCareInstruction&amp;RedirURL=../WFXBase4.0/wfx_CareInstructionTemplateMain.aspx">Care Symbols</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuFabricSpec"><a title="Textiles_Fabric Specifications" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Textiles_Fabric Specifications</span></a><div class="submenu1"><ul id="0003_0055"><li onmouseover="subMenuHeight(this);" menuname="mnuFabricCount" id="0003_0055_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Count" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuFabricCount&amp;RedirURL=wfx_FabricCountSettingsMain.aspx">Count</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuFabricConstruction" id="0003_0055_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Construction" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuFabricConstruction&amp;RedirURL=wfx_FabricConstructionSettingsMain.aspx">Construction</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuFabricContent" id="0003_0055_0030" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Content" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuFabricContent&amp;RedirURL=wfx_FabricContentSettingsMain.aspx">Content</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuBOM"><a title="BOM" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>BOM</span></a><div class="submenu1"><ul id="0003_0060"><li onmouseover="subMenuHeight(this);" menuname="mnuBOMLayout" id="0003_0060_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="BOM Layouts" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuBOMLayout&amp;RedirURL=wfx_BOMMain.htm">BOM Layouts</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuCostSheetTemplate" id="0003_0065" onclick="ShowParentMenuSelected(this);"><a undefined="" title="CostSheet Templates" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCostSheetTemplate&amp;RedirURL=wfx_CostSheetTemplateMain.aspx">CostSheet Templates</a></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuCostingSummary" id="0003_0096" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Costing Summary" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCostingSummary&amp;RedirURL=wfx_CostingSummaryParamNew.aspx%3F">Costing Summary</a></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuCatalogReports" id="0003_0100" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCatalogReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=1">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuESales"><a title="Sales" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#" class=""><span>Sales</span></a><div class="submenu submenuLeft"><ul id="0004"><li onmouseover="subMenuHeight(this);" menuname="mnuBuyers"><a title="Buyers" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Buyers</span></a><div class="submenu1"><ul id="0004_0010"><li onmouseover="subMenuHeight(this);" menuname="mnuManageBuyers" id="0004_0010_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="My Buyers" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuNewBuyer&amp;RedirURL=../WFXBase4.0/WFXPartyGroup.aspx?PartyType=1">My Buyers</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuSalesOrders"><a title="Purchase Orders from Buyers" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Purchase Orders from Buyers</span></a><div class="submenu1"><ul id="0004_0050"><li onmouseover="subMenuHeight(this);" menuname="mnuManageSalesOrders" id="0004_0050_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuManageSalesOrders&amp;RedirURL=wfx_OrderSearchMain.aspx%3FOrderType=2">Search</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuManageSalesOrdersList" id="0004_0050_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuOCList&amp;RedirURL=../WFXBase4.0/WFXOCList.aspx?FromMenu=1">List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuManageSalesOrdersNew" id="0004_0050_0030" onclick="ShowParentMenuSelected(this);"><a undefined="" title="New" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuManageSalesOrders&amp;RedirURL=wfx_SummaryOC.aspx%3FOrderType=2">New</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuSWN"><a title="Sample Order" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Sample Order</span></a><div class="submenu1"><ul id="0004_0056"><li onmouseover="subMenuHeight(this);" menuname="mnuSWNNewSampling" id="0004_0056_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="New Sample Order" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSWNNewSampling&amp;RedirURL=../WFXBase4.0/WFXSR.aspx?SampleStage=Sampling&amp;Action=New">New Sample Order</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRReceiptNew" id="0004_0056_0070" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Sample Receipt" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRReceiptNew&amp;RedirURL=../WFXBase4.0/WFXSRReceipt.aspx?FromMenu=1">Sample Receipt</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRReceiptList" id="0004_0056_0080" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Sample Receipt List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRReceiptList&amp;RedirURL=../WFXBase4.0/WFXStockGRNList.aspx">Sample Receipt List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRDispatchCourierNew" id="0004_0056_0090" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Sample Courier Dispatch" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRDispatchCourierNew&amp;RedirURL=../WFXBase4.0/WFXSRDispatch.aspx?DispatchType=Courier%26FromMenu=1">Sample Courier Dispatch</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRDispatchForwarderNew" id="0004_0056_0100" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Sample Forwarder Dispatch" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRDispatchForwarderNew&amp;RedirURL=../WFXBase4.0/WFXSRDispatch.aspx?DispatchType=Forwarder%26FromMenu=1">Sample Forwarder Dispatch</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRDispatchList" id="0004_0056_0110" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Sample Dispatch List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRReceiptList&amp;RedirURL=../WFXBase4.0/WFXStockGDNList.aspx">Sample Dispatch List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRReturnReceipt" id="0004_0056_0140" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Buyer Returned Sample Receipt" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRReturnReceipt&amp;RedirURL=../WFXBase4.0/WFXSRReturnReceipt.aspx">Buyer Returned Sample Receipt</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSRReturnReceiptList" id="0004_0056_0150" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Buyer Returned Sample Receipt List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSRReturnReceiptList&amp;RedirURL=../WFXBase4.0/WFXSRReturnReceiptlist.aspx">Buyer Returned Sample Receipt List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuSWNList" id="0004_0056_0510" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSWNList&amp;RedirURL=../WFXBase4.0/WFXSRList.aspx?FromMenu=1">List</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuSalesReports" id="0004_0110" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuSalesReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=2">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuESourcing"><a title="Sourcing" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Sourcing</span></a><div class="submenu submenuLeft"><ul id="0005"><li onmouseover="subMenuHeight(this);" menuname="mnuSellers"><a title="Suppliers" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Suppliers</span></a><div class="submenu1"><ul id="0005_0010"><li onmouseover="subMenuHeight(this);" menuname="mnuManageSellers" id="0005_0010_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="My Suppliers" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuNewBuyer&amp;RedirURL=../WFXBase4.0/WFXPartyGroup.aspx?PartyType=2">My Suppliers</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuPurchaseOrders"><a title="My Purchase Orders" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>My Purchase Orders</span></a><div class="submenu1"><ul id="0005_0050"><li onmouseover="subMenuHeight(this);" menuname="mnuManageBuyingOrders" id="0005_0050_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search – Raw Material PO" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuManageBuyingOrders&amp;RedirURL=wfx_OrderSearchMain.aspx%3FOrderType=1">Search – Raw Material PO</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuManageBuyingOrdersList" id="0005_0050_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List – Raw Material PO" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuRMPOList&amp;RedirURL=../WFXBase4.0/WFXRMPOList.aspx?FromMenu=1">List – Raw Material PO</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuPurchaseOrdersNew" id="0005_0050_0040" onclick="ShowParentMenuSelected(this);"><a undefined="" title="New – Raw Material PO" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuPurchaseOrdersNew&amp;RedirURL=wfx_OrderEditMain.aspx%3FNewDirectOrder=1">New – Raw Material PO</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuIndentControl"><a title="Indent Management" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Indent Management</span></a><div class="submenu1"><ul id="0005_0080"><li onmouseover="subMenuHeight(this);" menuname="mnuIndentControlSearch" id="0005_0080_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuIndentControlSearch&amp;RedirURL=ge_MOLSearch.aspx">List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuIndentControlUserList" id="0005_0080_0030" onclick="ShowParentMenuSelected(this);"><a undefined="" title="User Indent List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuIndentControlUserList&amp;RedirURL=ge_UserMOLSearch.aspx">User Indent List</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuIndentAssignment" id="0005_0080_0050" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Assign Indents" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuIndentAssignment&amp;RedirURL=ge_MOLSearch.aspx%3FFromIndent=2">Assign Indents</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuAdhocIndentNew" id="0005_0080_0060" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Adhoc Indents" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuAdhocIndentNew&amp;RedirURL=wfx_IndentEdit.aspx">Adhoc Indents</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuPurchaseReports" id="0005_0110" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuPurchaseReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=3">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuTracking"><a title="Tracking" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#" class="SelectedMenu"><span>Tracking</span></a><div class="submenu submenuLeft"><ul id="0006"><li onmouseover="subMenuHeight(this);" menuname="mnuMyTracking"><a title="My Tasks" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>My Tasks</span></a><div class="submenu1"><ul id="0006_0001"><li onmouseover="subMenuHeight(this);" menuname="mnuMyOrderTrackingSearch" id="0006_0001_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuMyOrderTrackingSearch&amp;RedirURL=wfx_MyOrderTrackingSearchMain.aspx">Search</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuMyOrderTracking" id="0006_0001_0002" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuMyOrderTracking&amp;RedirURL=wfx_MyOrderTrackingMain.aspx?List=1">List</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuOrderTemplatesList" id="0006_0004" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Track Templates" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuOrderTemplatesList&amp;RedirURL=wfx_TemplateMain.aspx">Track Templates</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuTrackCodes"><a title="Codes" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Codes</span></a><div class="submenu1"><ul id="0006_0006"><li onmouseover="subMenuHeight(this);" menuname="mnuManageTask" id="0006_0006_0002" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Tasks" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuManageTask&amp;RedirURL=wfx_StdTaskMain.aspx">Tasks</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuManageRole" id="0006_0006_0022" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Role" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuManageRole&amp;RedirURL=../WFXBase4.0/WFXRole.aspx">Role</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuTrackingReports" id="0006_0015" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuTrackingReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=6">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuProduction"><a title="Production" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Production</span></a><div class="submenu submenuLeft"><ul id="0040"><li onmouseover="subMenuHeight(this);" menuname="mnuPRPO"><a title="Process Definition" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Process Definition</span></a><div class="submenu1"><ul id="0040_0030"><li onmouseover="subMenuHeight(this);" menuname="mnuPRPOSearch" id="0040_0030_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuPRPOSearch&amp;RedirURL=wfx_PRPOSearch.aspx">Search</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuPRPOList" id="0040_0030_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuPRPOList&amp;RedirURL=wfx_PRPOList.aspx%3FFromMenu=1">List</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuProductionReports" id="0040_0160" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuProductionReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=12">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuInventory"><a title="Inventory" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Inventory</span></a><div class="submenu submenuLeft"><ul id="0050"><li onmouseover="subMenuHeight(this);" menuname="mnuGRN"><a title="Receiving" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Receiving</span></a><div class="submenu1"><ul id="0050_0020"><li onmouseover="subMenuHeight(this);" menuname="mnuGRNSearch" id="0050_0020_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuGRNSearch&amp;RedirURL=wfx_StockGRNSearch.aspx">Search</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuGRNList" id="0050_0020_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuGRNList&amp;RedirURL=wfx_StockGRNList.aspx%3FFromList=1">List</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuGDN"><a title="Dispatch" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Dispatch</span></a><div class="submenu1"><ul id="0050_0040"><li onmouseover="subMenuHeight(this);" menuname="mnuGDNSearch" id="0050_0040_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Search" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuGDNSearch&amp;RedirURL=wfx_StockGDISearch.aspx%3FType=GDNList">Search</a></li><li onmouseover="subMenuHeight(this);" menuname="mnuGDNList" id="0050_0040_0020" onclick="ShowParentMenuSelected(this);"><a undefined="" title="List" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuGDNList&amp;RedirURL=wfx_StockGDIList.aspx%3FType=GDNList%26FromList=1">List</a></li></ul></div></li><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuStockReports" id="0050_0090" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Reporting &amp; Analysis" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuStockReports&amp;RedirURL=wfx_ESalesReport.aspx%3FTab=10">Reporting &amp; Analysis</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname="mnuBusinessIntelligence"><a title="Business Intelligence" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Business Intelligence</span></a><div class="submenu submenuLeft"><ul id="0085"><li class="LeafNode" onmouseover="subMenuHeight(this);" menuname="mnuCustomReports" id="0085_0010" onclick="ShowParentMenuSelected(this);"><a undefined="" title="Custom Reports" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?MenuName=mnuCustomReports&amp;RedirURL=../WFXBase4.0/WFXBICustomReport.aspx">Custom Reports</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname=""><a title="Company" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>Company</span></a><div class="submenu submenuLeft"><ul id="0200"><li onmouseover="subMenuHeight(this);" menuname=""><a title="MODELAMA EXPORTS (P) LIMITED" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>MODELAMA EXPORTS (P) LIMITED</span></a><div class="submenu3"><ul id="0200_0001"><li onmouseover="subMenuHeight(this);" menuname="" id="0200_0001_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="MODELAMA EXPORTS (P) LIMITED" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?ChangeBaseSetting=1&amp;MemberCompanyCode=66300&amp;folderID=6630001&amp;blnShowNewMenu=true">MODELAMA EXPORTS (P) LIMITED</a></li><li onmouseover="subMenuHeight(this);" menuname="" id="0200_0001_0002" onclick="ShowParentMenuSelected(this);"><a undefined="" title="MODELAMA US" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?ChangeBaseSetting=1&amp;MemberCompanyCode=66300&amp;folderID=663001695&amp;blnShowNewMenu=true">MODELAMA US</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname=""><a title="ModIndia Exim Private Limited" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>ModIndia Exim Private Limited</span></a><div class="submenu3"><ul id="0200_0002"><li onmouseover="subMenuHeight(this);" menuname="" id="0200_0002_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="MODINDIA EXIM PRIVATE LIMITED" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?ChangeBaseSetting=1&amp;MemberCompanyCode=67900&amp;folderID=663001689&amp;blnShowNewMenu=true">MODINDIA EXIM PRIVATE LIMITED</a></li></ul></div></li><li onmouseover="subMenuHeight(this);" menuname=""><a title="PT. Mod Indo" href="https://modelama.worldfashionexchange.com/wfx/Default.aspx?Type=Login&amp;blnShowNewMenu=true#"><span>PT. Mod Indo</span></a><div class="submenu3"><ul id="0200_0003"><li onmouseover="subMenuHeight(this);" menuname="" id="0200_0003_0001" onclick="ShowParentMenuSelected(this);"><a undefined="" title="PT. Mod Indo" target="body" href="https://modelama.worldfashionexchange.com/wfx/wfx_BaseSetting.aspx?ChangeBaseSetting=1&amp;MemberCompanyCode=69103&amp;folderID=663002915&amp;blnShowNewMenu=true">PT. Mod Indo</a></li></ul></div></li></ul></div></li></ul>
+                                </nav>
+                            </div>
+                        </header>
+                    </section>
+                </td>
+            </tr>
+            <tr id="trbody" valign="top" width="100%">
+                <td>
+                    <iframe width="100%" name="body" src="./TNA_120_World Fashion Exchange_files/tri_BriefStartUpPage.html" scrolling="false" frameborder="0" target="_self" noresize="" style="height: 519px; min-height: 568px;"></iframe>
+                </td>
+            </tr>
+        </tbody></table>
+        
+        <input id="hdnHelpDeskOrgID" type="hidden" name="hdnHelpDeskOrgID" value="28">
+    </form>
+    <script type="text/javascript" src="./TNA_120_World Fashion Exchange_files/common.ashx"></script>
+    <script type="text/javascript" src="./TNA_120_World Fashion Exchange_files/MyWFX.Cdefault,xOffice.Others.ashx"></script>
+    <script type="text/javascript">
+        sessionStorage.DoNotAutoLogout = true;
+        sessionStorage.IncrementUserActivityTime = true;
+        var LanguageCode = 'en';
+        var MenuName = 'MBMenuBar';
+
+        var strServerTime = '6/19/2019 6:27:08 PM';
+        var now = new Date(strServerTime);
+        var NotificationMessage = '';
+        var InActiveSettings = '0'
+        var InActiveSeconds = '0'
+        var strDefaultPasswordExpiryDaysSetting = '0'
+        var strPasswordExpiryDays = '0'
+        var strPasswordExpiryReminder = '0'
+        var strDaysPwsChangedBefore = '91'
+        if (strDefaultPasswordExpiryDaysSetting == "") {
+            strDefaultPasswordExpiryDaysSetting = 0;
+        }
+        if (strPasswordExpiryDays == "") {
+            strPasswordExpiryDays = 0;
+        } else {
+            strPasswordExpiryDays = parseInt(strPasswordExpiryDays)
+        }
+        if (strPasswordExpiryReminder == "") {
+            strPasswordExpiryReminder = 0;
+        } else {
+            strPasswordExpiryReminder = parseInt(strPasswordExpiryReminder)
+        }
+        if (strDaysPwsChangedBefore == "") {
+            strDaysPwsChangedBefore = 0;
+        } else {
+            strDaysPwsChangedBefore = parseInt(strDaysPwsChangedBefore)
+        }
+        if (InActiveSettings == "") {
+            InActiveSettings = 0;
+        }
+        if (InActiveSeconds == "") {
+            InActiveSeconds = 0;
+        }
+        localStorage.IdleTimeOut = InActiveSeconds;
+        /*
+            //Deployment Notification
+            The application will be down for maintenance on 06-Apr-2016 from 11:00 AM to 11:10 AM (IST).
+        */
+
+        $().ready(function () {
+            ShowServerTime();
+            if (NotificationMessage != 'OFF' && NotificationMessage != '') {
+                $('#notification').text(NotificationMessage);
+            } else {
+                $('#notification').text('');
+            }
+            checkIncognitoBrowsing();
+        });
+        function checkIncognitoBrowsing() {
+            var fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+            if (!fs) {
+                //result.textContent = "check failed?";
+                return;
+            }
+            fs(window.TEMPORARY, 100, function (fs) {
+                $("#marqueeIncognitoNotification").hide();
+            }, function (err) {
+                $("#notification").hide();
+                $("#marqueeIncognitoNotification").text("You are browsing in Incognito mode which may impact the application performance. Its recommended to run in normal mode for enhanced browsing experience!");
+            });
+        }
+        function ShowPasswordPage() {
+            var strURL = "../wfx/wfx_ChangePassword.aspx?TokenFor=PasswordExpiry";
+            $("#divShowPassword").remove();
+            $("form").append("<div id=\"divShowPassword\"><iframe id=\"frameShowPassword\" style=\"width:100%;height:100%;border:none;\" src=\"" + strURL + "\"></iframe></div>");
+            DisplayCompanyDiv("divShowPassword", "", 500, 400, 1, "center");
+            return false;
+        }
+
+        function window_onLoad() {
+             
+
+            if (strDefaultPasswordExpiryDaysSetting == "1") {
+                if (strDaysPwsChangedBefore >= (strPasswordExpiryDays - strPasswordExpiryReminder)) {
+                    if (confirm("Please change the password, as it will get expired in " + (strPasswordExpiryDays - strDaysPwsChangedBefore).toString() + " more days.")) {
+                        ShowPasswordPage();
+                    }
+                }
+            }
+            checkJavaVersion();//if less than Java 6 Update 24 it shows msg for upgradation. Required for IE9
+            var strSave = "";
+            var strMessage = ""
+            if (strMessage != "") {
+                var strErrorMsg = GetAttributeValue(document.forms[0].lblProperties.value, 'xeInvalidUser', gintErrorMsg) + " ";
+                ShowMessage(strErrorMsg);
+            }
+	
+
+            var UserFirstLastName = 'US TEAM PD';
+            if (UserFirstLastName.length > 15)
+                $('#UserFullName').text(UserFirstLastName.substr(0, 15) + '...');
+            else
+                $('#UserFullName').text(UserFirstLastName);
+            $('#UserFullName').attr('title', UserFirstLastName);
+            var data = Cdefault.BuildMenu(LanguageCode, MenuName);
+            if (data.error != null) {
+                alert("An Error occured in function BuildMenu()\n" + data.error.description);
+                return false;
+            }
+            else if (data.value.Rows.length == 0) {
+                alert("No Data Found for Menu.");
+                return false;
+            }
+            BuildMainMenu(data.value.Rows, MenuName);
+            BindBookmarkEvent();
+
+            
+
+            var UserProfileImageSrc = '';
+            if (UserProfileImageSrc != '')
+                $('.profileboxleft img').attr('src', UserProfileImageSrc);
+            ResizeDocument();
+            $(window).resize(function () {
+                ResizeDocument();
+            });
+            hdnHelpDeskOrgID.value = "28"
+            var keyLoginValue = "5058" + "|" + "663001695";
+            var mHelpDeskOrgID = "28";
+            setStorageData(keyLoginValue, mHelpDeskOrgID, "default");
+        }
+
+        function BindBookmarkEvent() {
+	
+        }
+
+        function BuildMainMenu(Rows, MenuName) {
+            var i = 0, Count = 0, length = Rows.length, HTML = '', SubMenu0ID = SubMenu1ID = SubMenu2ID = SubMenu3ID = '', clsSubMenu1 = 'submenu1', clsSubMenu2 = 'submenu2',
+                strBookmark = "", strLeafClass;
+            
+
+            for (; i < length; i++) {
+		
+
+                if (Rows[i].RowNum.split('_').length == 2)//Level-1, First Level Child Node like Search,Catalogs,Price Lists in Catalog Main Menu
+                {
+                    if (Rows[i].RowNum == '0002_0001' || Rows[i].RowNum == '0002_0002' || Rows[i].RowNum == '0002_0006')//Startup Page,Message Center,My Profile
+                    {
+                        //skip
+                    }
+                    else if (Rows[i].FileName != '')//It is a leaf node
+                        HTML = "<li class='LeafNode' onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "' id='" + Rows[i].RowNum + "' onclick='ShowParentMenuSelected(this);'><a " + strLeafClass + " title='" + Rows[i].TranslatedString + "' target='body' href='" + Rows[i].FileName + "'>" + Rows[i].TranslatedString + "</a>" + strBookmark + "</li>";
+                    else {
+                        if (Rows[i + 1].RowNum.indexOf(Rows[i].RowNum + '_') == -1)
+                            HTML = "";
+                        else {
+                            SubMenu1ID = Rows[i].RowNum;
+                            HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "'><a title='" + Rows[i].TranslatedString + "' href='#'><span>" + Rows[i].TranslatedString + "</span></a><div class='" + clsSubMenu1 + "'><ul id='" + SubMenu1ID + "'></ul></div></li>";
+                        }
+                    }
+                    $('#' + SubMenu0ID).append(HTML);
+                }
+                else if (Rows[i].RowNum.split('_').length == 3)//Level-2, Second Level Child Nodes like Default Buying Prices in Catalog>Price Lists
+                {
+                    if (Rows[i].FileName != '')//It is a leaf node
+                    {
+                        if (Rows[i].RowNum.indexOf('0100_') === 0)//MyCompany's childrens
+                            HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "' id='" + Rows[i].RowNum + "'><a title='" + Rows[i].TranslatedString + "' target='body' href='" + Rows[i].FileName + "'>" + Rows[i].TranslatedString + "</a></li>";
+                        else
+                            HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "' id='" + Rows[i].RowNum + "' onclick='ShowParentMenuSelected(this);'><a " + strLeafClass + " title='" + Rows[i].TranslatedString + "' target='body' href='" + Rows[i].FileName + "'>" + Rows[i].TranslatedString + "</a>" + strBookmark + "</li>";
+
+                    }
+                    else {
+                        if (Rows[i + 1] && Rows[i + 1].RowNum.indexOf(Rows[i].RowNum + '_') == -1)
+                            HTML = "";
+                        else {
+                            SubMenu2ID = Rows[i].RowNum;
+                            HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "'><a title='" + Rows[i].TranslatedString + "' href='#'><span>" + Rows[i].TranslatedString + "</span></a><div class='" + clsSubMenu2 + "'><ul id='" + SubMenu2ID + "'></ul></div></li>";
+                        }
+                    }
+                    $('#' + SubMenu1ID).append(HTML);
+                }
+                else if (Rows[i].ParentNodeCode == '0000')//Level-0, Top Level Menu like Catalog
+                {
+                    if (Rows[i].RowNum == "0000" && parseFloat(Rows[i].TranslatedString) >= 30) {
+                        HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "'><a href='#' onClick='ShowCompany()'>Change Company</a></li>";
+                        $('#UserProfile').prepend(HTML);
+                    }
+                    else if (Rows[i].RowNum == "0002")//MyWFX
+                    {//skip
+                    }
+                    else if (Rows[i].RowNum != "0000") {
+                        Count++;
+                        if (Count > 7 || Rows[i].MenuName == "mnuFA" || Rows[i].MenuName == "mnuPPC" || Rows[i].MenuName == "mnuAdmin" || Rows[i].MenuName == "") {
+                            clsSubMenu1 = 'submenu3';
+                            clsSubMenu2 = 'submenu4';
+                        }
+                        SubMenu0ID = Rows[i].RowNum;
+                        var posClass = "submenuLeft";
+
+                        if (Count > 9) { posClass = "submenuRight"; }
+                        
+                        HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "'><a title='" + Rows[i].TranslatedString + "' href='#'><span>" + Rows[i].TranslatedString + "</span></a><div class='submenu " + posClass + "'><ul id='" + Rows[i].RowNum + "'></ul></div></li>";
+                        $('#ulMenu').append(HTML);
+                    }
+                }
+                else if (Rows[i].RowNum.split('_').length == 4)//Level-3, Leaf Node like Search,List in Sales>Purchase orders from buyers>oc import>
+                {
+                    if (Rows[i].FileName != '')//Has child nodes 
+                        HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "' id='" + Rows[i].RowNum + "' onclick='ShowParentMenuSelected(this);'><a title='" + Rows[i].TranslatedString + "' target='body' href='" + Rows[i].FileName + "'>" + Rows[i].TranslatedString + "</a></li>";
+                    else {
+                        if (Rows[i + 1].RowNum.indexOf(Rows[i].RowNum + '_') == -1)
+                            HTML = "";
+                        else {
+                            SubMenu3ID = Rows[i].RowNum;
+                            HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "'><a title='" + Rows[i].TranslatedString + "' href='#'><span>" + Rows[i].TranslatedString + "</span></a><div class='submenu3'><ul id='" + SubMenu3ID + "'></ul></div></li>";
+                        }
+                    }
+                    $('#' + SubMenu2ID).append(HTML);
+                }
+                else if (Rows[i].RowNum.split('_').length == 5)//Level-2, Second Level Child Nodes like Default Buying Prices in Catalog>Price Lists
+                {
+                    if (Rows[i].FileName != '')//Has child nodes
+                    {
+                        HTML = "<li onmouseover=\"subMenuHeight(this);\" MenuName='" + Rows[i].MenuName + "' id='" + Rows[i].RowNum + "' onclick='ShowParentMenuSelected(this);'><a title='" + Rows[i].TranslatedString + "' target='body' href='" + Rows[i].FileName + "'>" + Rows[i].TranslatedString + "</a></li>";
+                        $('#' + SubMenu3ID).append(HTML);
+                    }
+                }
+            }
+            var HTML = $('#ulMenu').html();
+
+            mnuBookmarksOnMouseOver("7c9ac261-1823-4e46-b727-a6c1d0a414fc");
+        }
+
+        function ShowParentMenuSelected(obj) {
+            $('.SelectedMenu').removeClass('SelectedMenu');
+            $(obj).closest('div.submenu').prev().addClass('SelectedMenu');
+        }
+
+        function checkJavaVersion() {
+            $('#deployJavaPlugin').css('display', 'none');
+            var JavaUpdateHtml = "";
+            var x = new Object;
+            var JavaVersions = deployJava.getJREs();
+            var JavaVersionsLength = JavaVersions.length;
+            /*if(JavaVersions[JavaVersionsLength-1]>"1.7.0_25"){
+                JavaUpdateHtml="<div>Your Java Version is higher than required Java 7 Update 25.</br></br>For proper functioning of this website it is highly recommended to uninstall newer version and then install the <b>Java 7 Update 25</b> from <br/> <a href='http://download-euro.oldapps.com/Java/jre-7u25-windows-i586.exe' target='_blank'>http://download-euro.oldapps.com/Java/jre-7u25-windows-i586.exe</a></div>";
+                x.Height="135px";
+                x.HeaderHeight="135px";
+                x.Width="500px";
+                x.Title="Please downgrade your Java to Java 7 Update 25";
+            }
+            else */if (JavaVersions[0] < "1.6.0_24") {
+                JavaUpdateHtml = "<div id='Java6Update24'>Your Java Version is less than Java 6 Update 24.</br></br>For proper functioning of this website it is highly recommended to uninstall the older Java Versions and install the latest version from <a href='http://java.com/en/download/index.jsp' target='_blank'>http://java.com/en/download/index.jsp</a></br></br>For more help <a href='Java.docx'>Click Here</a>";
+                x.Height = "165px";
+                x.HeaderHeight = "135px";
+                x.Width = "430px";
+                x.Title = "Please update your Java";
+            }
+            if (JavaUpdateHtml != "") {
+                x.HeaderHtml = JavaUpdateHtml;
+                x.fnSave = "ClosePopup";
+                var index = wfxPopup(x);
+            }
+        }
+
+        function ResizeDocument() {
+            var browser = {
+                chrome: false,
+                mozilla: false,
+                opera: false,
+                msie: false,
+                safari: false
+            };
+            var userAgent = navigator.userAgent;
+            /* if(userAgent.indexOf("Chrome") > -1) {
+                browser.chrome = true;
+            } else if (userAgent.indexOf("Safari") > -1) {
+                browser.safari = true;
+            } else if (userAgent.indexOf("Opera") > -1) {
+                browser.opera = true;
+            } else if (userAgent.indexOf("Firefox") > -1) {
+                browser.mozilla = true;
+            } else*/ if (userAgent.indexOf("MSIE") > -1) {
+                browser.msie = true;
+            }
+            if (browser.msie)
+                var height = $(window).innerHeight() - $('#trMenu').outerHeight() - 18;
+            else
+                var height = window.innerHeight - $('#trMenu').outerHeight() - 5;
+            $('iframe[name=body]').css('height', height);
+            $('iframe[name=body]').css('min-height', '568px');
+            $("#notification").css("width", ($(".profile")[0].offsetLeft - 120))
+            $("#marqueeIncognitoNotification").css("width", ($(".profile")[0].offsetLeft - 120))
+        }
+
+        function ShowCompany() {
+            var strURL = "MenuBarCompany.aspx?FromPage=Default"
+            /*var MyArgs = new Array(self)
+            var WinSettings = "Width=497,Height=443,top=205,left=170,scrollbars=1,resizable=0,status=1,center:yes";
+            var MyArgs = showModalDialog(strURL, MyArgs, WinSettings);*/
+            $("#divShowCompany").remove();
+            $("form").append("<div id=\"divShowCompany\"><iframe id=\"frameShowCompany\" style=\"width:100%;height:100%;border:none;\" src=\"" + strURL + "\"></iframe></div>");
+            DisplayCompanyDiv("divShowCompany", "", 500, 400, 1, "center");
+            return false;
+        }
+
+        function DisplayCompanyDiv(targetDivId, positionControlId, targetDivWidth, targetDivHeight, disablePage, align, topMargin, leftMargin, obj) {
+            var docHeight = $(document).height(); var docWidth = $(document).width();
+            var winHeight = $(window).height(); var winWidth = $(window).width();
+            if (winHeight == 0) {//IE 8
+                winHeight = document.body.clientHeight;
+            }
+            if (winWidth == 0) {//IE 8
+                winWidth = document.body.clientWidth;
+            }
+            if (isNaN(docHeight)) { docHeight = winHeight; }
+            if (isNaN(docWidth)) { docWidth = winWidth; }
+            if (winHeight < docHeight)
+                docHeight = winHeight;
+            if (winWidth < docWidth)
+                docWidth = winWidth;
+
+            targetDivWidth = (targetDivWidth == undefined || targetDivWidth == "") ? (docWidth - 40) : targetDivWidth;
+            targetDivHeight = (targetDivHeight == undefined || targetDivHeight == "") ? (docHeight - 40) : targetDivHeight;
+
+            //$("#" + targetDivId).css("display", "inline-block");
+            $("#" + targetDivId).css("padding", "5px");
+            if (targetDivWidth > (docWidth - 40)) { targetDivWidth = docWidth - 40; }
+            if (targetDivHeight > (docHeight - 40)) { targetDivHeight = docHeight - 40; }
+
+            var top = 0; left = 0, objWidth = 0;
+            if (obj == undefined) {
+                if (positionControlId != "" && positionControlId != undefined) {
+                    obj = $("#" + positionControlId)[0];
+                }
+            }
+
+            if (obj != undefined) {
+                top = $(obj).position().top;
+                left = $(obj).position().left;
+                objWidth = $(obj).width();
+            }
+            else {
+                top = (docHeight - targetDivHeight) / 2;
+                left = (docWidth - targetDivWidth) / 2;
+            }
+            if (align == "right" || (align == "left")) {
+                left = parseFloat(left) + objWidth - parseFloat(targetDivWidth);
+            }
+
+            if (Number(top) < 0) { top = 0; }
+            if (Number(left) < 0) { left = 0; }
+            if (targetDivId == "sectionAccSummary") {
+                left = left - 22; top = top + 3;
+            }
+            if (align == "center" && positionControlId == "") {
+                top = top + $(document).scrollTop();
+            }
+
+            if (topMargin && topMargin != "") top = top + (topMargin); if (leftMargin && leftMargin != "") left = left + (leftMargin);
+            $("#" + targetDivId).css("position", "absolute");
+            $("#" + targetDivId).addClass("Targetblock");
+            $("#" + targetDivId).css("background-color", "white");
+            $("#" + targetDivId).css("top", top + "px");
+            gMaxZindex = gMaxZindex + 1;
+            $("#" + targetDivId).css("width", targetDivWidth).css("height", targetDivHeight);
+
+            if (align == "center") {
+                $("#" + targetDivId).css("left", "50%");
+                $("#" + targetDivId).css("margin-left", "-" + Number((targetDivWidth / 2) + 11) + "px"); //Jatin: this 11px is to balance present padding + margin given to popup window.
+                $("#" + targetDivId).css("z-index", gMaxZindex);
+            }
+            else {
+                $("#" + targetDivId).css("left", left);
+                $("#" + targetDivId).css("z-index", gMaxZindex);
+            }
+            if (disablePage) {
+                DisableAreaNew($("body"), "Popup", (gMaxZindex - 1), targetDivId);
+            }
+            $('html').trigger("click");
+        }
+
+        function HideModalWindow(isCancel) {
+            HideDiv("divShowCompany");
+        }
+        function LogOff(calledFrom) {
+            localStorage.CloseChilds = 1;
+            var URL = "Default.aspx?LogOff=1";
+            if (calledFrom == "WFX4.0Common") {
+                URL = "../wfx/" + URL;
+            }
+             window.open(URL, "_self");
+             localStorage.IdleTimeOut = 0;
+        }
+
+        function AutoLogoutNotification()
+        {
+            $("#notification").text("The application will logout automatically in 5 min due to inactivity of the logged in user.").show();
+            return true;
+        }
+
+        function RemoveAutoLogoutNotification() {
+            if ($("#notification").text() == "The application will logout automatically in 5 min due to inactivity of the logged in user.") {
+                $("#notification").text("").hide();
+            }
+            return true;
+        }
+
+        function RefreshMenuBar() {
+            var strhref;
+            strhref = Cdefault.Reloadmenu();
+            $('iframe[name=body]')[0].src = strhref.value;
+        }
+
+        function wfxPopup(obj) {
+            if (obj != undefined) {
+                if (obj.HeaderHtml == undefined)
+                    obj.HeaderHeight = 0;
+                else if (obj.HeaderHtml != undefined && obj.HeaderHeight == undefined) {
+                    alert("Please specify 'HeaderHeight' in the object passed.");
+                    return
+                }
+
+                var index = $(".PopupContainer[index]").length + 1;
+                if (obj.fnClose == undefined)
+                    obj.fnClose = "wfxClosePopup";
+                if (obj.Id == undefined)
+                    obj.Id = $(".PopupContainer").length + 1;
+                var strHtml = "<div class='PopupContainer' id='" + obj.Id + "' index='" + index + "' style='height:" + obj.Height + "; width:" + obj.Width + "'>";
+                strHtml += "<div id='PopUpAction'>";
+                if (obj.Title != undefined)
+                    strHtml += "<label>" + obj.Title + "</label>";
+
+                strHtml += "<span>";
+
+                if (obj.fnSave != undefined) {
+                    /*
+                    if(obj.paramsSave!=undefined)
+                        strHtml += "<span onClick='" + obj.fnSave + "(\"" + obj.paramsSave + "\"," + index + ")'><IMG name='Save' src='pictures/close.gif'><label>OK</label></span>";
+                    else
+                        strHtml += "<span onClick='" + obj.fnSave + "(" + index + ")'><IMG name='Save' src='pictures/close.gif'><label>OK</label></span>";
+                    */
+                    strHtml += "<span id ='lnkSave'><IMG name='Save' src='pictures/close.gif'><label>OK</label></span>";
+                }
+                //if(obj.fnClose != undefined)
+                //strHtml += "<span onClick='" + obj.fnClose + "(" + index + ")'><IMG name='Close' src='pictures/cancel.gif'><label>Cancel</label></span>";
+
+                strHtml += "</span></div>";
+
+                if (obj.HeaderHtml != undefined)
+                    strHtml += "<div id='PopupHeader'>" + obj.HeaderHtml + "</div>";
+
+                if (obj.GridHtml != undefined)
+                    strHtml += "<div id='PopupGrid' class='ListGrid'>" + obj.GridHtml + "</div>";
+
+                strHtml += "</div>";
+
+                if ($(".divDisable[name='popup']").length == 0)
+                    DisableCurrentArea($("body"), "popup");
+
+                $("form:first").append(strHtml);
+
+                if (obj.Height != undefined)
+                    $(".PopupContainer[index='" + index + "']").css("height", obj.Height);
+                else
+                    obj.Height = $(".PopupContainer[index='" + index + "']").height();
+
+                if (obj.Width != undefined)
+                    $(".PopupContainer[index='" + index + "']").css("width", obj.Width);
+                else
+                    obj.Width = $(".PopupContainer[index='" + index + "']").width();
+
+                if (obj.Y == undefined)
+                    obj.Y = ($(window).height() - parseFloat(obj.Height)) / 2;
+                if (obj.X == undefined)
+                    obj.x = ($(window).width() - parseFloat(obj.Width)) / 2;
+
+                $(".PopupContainer[index='" + index + "'] #PopupHeader").css("height", obj.HeaderHeight);
+
+                var GridHeight = parseFloat($(".PopupContainer[index='" + index + "']").height()) - parseFloat(obj.HeaderHeight) - 80;
+                $(".PopupContainer[index='" + index + "']").css("top", obj.Y);
+                $(".PopupContainer[index='" + index + "']").css("left", obj.x);
+                $(".PopupContainer[index='" + index + "'] #PopupGrid").css("height", GridHeight);
+                $(".PopupContainer[index='" + index + "'] #PopupGrid table").css("width", (parseFloat(obj.Width) - 50));
+                if (obj.fnPreFetch != undefined) {
+                    if (obj.paramsPreFetch == undefined) {
+                        obj.paramsPreFetch = index;
+                        invokeFunction(obj.fnPreFetch, [obj.paramsPreFetch]);
+                    }
+                    else {
+                        obj.paramsPreFetch += "," + index;
+                        invokeFunction(obj.fnPreFetch, obj.paramsPreFetch.split(","));
+                    }
+                }
+
+                $("#lnkSave").click(function () {
+                    invokeFunction(obj.fnClose, [index]);
+                });
+
+                if (index > 1) {
+                    $(".PopupContainer[index='" + (index - 1) + "']").css("z-index", index - 1);
+                }
+                $(".PopupContainer[index='" + index + "']").css("display", "block");
+            }
+            else
+                alert("Object not passed to wfxPopup.");
+
+            return index;
+        }
+
+        function invokeFunction(name, arguments) {
+            var fn = window[name];
+            if (typeof fn != 'function') {
+                alert(name + " passed to invokeFunction() is not a function.")
+                return;
+            }
+            fn.apply(window, arguments);
+        }
+
+        function wfxClosePopup(index) {
+            $(".PopupContainer[index='" + index + "']").remove();
+            if (index > 1)
+                $(".PopupContainer[index='" + (index - 1) + "']").css("z-index", 150);
+            if ($(".PopupContainer").length == 0)
+                $(".divDisable[name='popup']").remove();
+            return;
+        }
+
+        function DisableCurrentArea(ctrl, name) {
+            ctrl.css("position", "relative");
+            ctrl.append("<div class='divDisable' style='width:99%;' name='" + name + "'></div>")
+            return
+        }
+
+        function ShowMessage(zstrMsg) {
+            alert(zstrMsg);
+        }
+
+        function ClosePopup(index) {
+            wfxClosePopup(index);
+        }
+
+        function ShowServerTime() {
+            var m_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+            var Hours = now.getHours();
+            var Minutes = now.getMinutes();
+            var Seconds = now.getSeconds();
+            if (now.getDate() < 10)
+                var curr_Date = "0" + now.getDate() + " " + m_names[now.getMonth()] + " " + now.getFullYear()
+            else
+                var curr_Date = now.getDate() + " " + m_names[now.getMonth()] + " " + now.getFullYear()
+
+            document.getElementById("ServerTime").innerText = curr_Date + "  " + ((Hours > 12) ? Hours - 12 : Hours) + ((Minutes < 10) ? ":0" : ":") + Minutes
+                + ((Seconds < 10) ? ":0" : ":") + Seconds + ((Hours >= 12) ? " PM" : " AM")
+            now.setSeconds(Seconds + 1)
+            setTimeout("ShowServerTime()", 1000);
+        }
+
+        function subMenuHeight(obj) {
+            return true;
+            var objDiv = $(obj).children().eq(1)[0];
+            if (objDiv != undefined) {
+                var divHeight = $(window).height() - $(objDiv).offset().top - 25;
+                if ($(objDiv).height() + $(objDiv).offset().top + 25 > $(window).height()) {
+                    $(objDiv).attr("style", "height:" + divHeight + 'px');
+                    $(objDiv).css("overflow", "hidden");
+                    $(objDiv).find("li").attr("onmouseover", "divScroll(this)");
+                }
+            }
+        }
+
+    </script>
+
+
+
+
+</body></html>
